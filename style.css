@@ -1,0 +1,70 @@
+body{
+    background-image: url(https://png.pngtree.com/background/20210715/original/pngtree-scene-with-geometrical-forms-the-poster-model-minimal-background-render-picture-image_1259850.jpg);
+    background-size: 1390px 630px;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 552px;
+    height: 330px;
+    position: relative;
+    left: 20px;
+    top: 97px;
+    
+}
+.but1{
+    position:relative;
+    float:left;
+    left:600px;
+}
+i {
+    background-color: orangered;
+    height: 3vh;
+    width: 3vh;
+    text-align: center;
+    font-size: 3vh;
+    float: right;
+    right:3vh;
+    top: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.group1{
+    position: relative;
+    height: 400px;
+    width: 400px;
+}
+.one{
+    background:rgb(224 231 231);
+    width: 370px;
+    height: 300px;
+    top: 147px;
+    left: -186px;
+    border-radius: 20px;
+    position: relative;
+    display: none;
+}
+.click{
+    position: relative;
+    border-radius: 9px;
+    top: 40px;
+}
+#username,#emailid{
+    background: #77c9c9;
+    color: floralwhite;
+}
+.form-group{
+    padding: 6px;
+}
+h3{
+    position: relative;
+    left: 10px;
+    color: darkblue;
+}
+#btn{
+    left: 6px;
+    top: 8px;
+    position: relative;
+    border-radius: 6px;
+    color: #fff6d0;
+    background: rgb(194, 144, 241);
+}
