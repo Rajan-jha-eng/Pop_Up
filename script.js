@@ -30,6 +30,7 @@ $(document).ready(function(){
         }
         else{
             $('#usernamevalidation').hide();
+            Error=true;
         }
         if(username_val.length<3 || username_val.length>10){
             $('#usernamevalidation').show();
@@ -51,6 +52,7 @@ $(document).ready(function(){
         var email_val=$('#emailid').val();
         if(emailregex.test(email_val)){
             $('#emailvalidation').hide();
+            email_error=true;
         }
         else{
             $('#emailvalidation').show();
