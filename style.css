@@ -68,3 +68,8 @@ h3{
     color: #fff6d0;
     background: rgb(194, 144, 241);
 }
+@media screen and (max-width: 1500px) {
+    body,.container {
+      width: 100%; 
+    }
+  }
