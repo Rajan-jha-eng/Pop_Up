@@ -1,12 +1,11 @@
 $(document).ready(function(){
     $('.click').on('click',function(){
-        $('.one').css('display','block')
+        $('.one.show').toggle();
+        $('.one').addClass('show');
     });
     $('i').on('click', function() {
         $('.one').css('display', 'none')
     });
-});
-
 $(document).ready(function(){
     $('#usernamevalidation').hide();
     $('#emailvalidation').hide();
@@ -41,7 +40,9 @@ $(document).ready(function(){
         }
         else{
             $('#usernamevalidation').hide();
+            Error=true;
         }
+        return true;
     }
     /* for email */
     $('#emailid').keyup(function(){
@@ -61,16 +62,21 @@ $(document).ready(function(){
             email_error=false;
             return false;
         }
+        return true;
+       
     }
-    $('#btn').click(function(){
+    $('#btn').on('click',function(){
         username_validation();
         email_validation();
+        console.log(Error);
         if(Error==true && email_error==true){
-            return true;
+            $('.one').hide();
           }
         else{
             return false;
         }
     });  
       
+});
+
 });
